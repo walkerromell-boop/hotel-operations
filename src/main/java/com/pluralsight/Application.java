@@ -7,7 +7,19 @@ public class Application {
         System.out.println(reservation1.getReservationTotal());
         System.out.println(reservation2.getReservationTotal());
 
-        Employee employee1=new Employee();
+        Hotel hiltonHead = new Hotel("Hilton Head", 20, 100, 0, 0);
+        System.out.println(hiltonHead);
+        if (hiltonHead.bookRoom(10,false)){
+            System.out.println(hiltonHead);
+        }else {
+            System.out.println("Begone From my Palace");}
+
+        if (hiltonHead.bookRoom(2, true)) {
+            System.out.println(hiltonHead);
+        }else {
+            System.out.println("Nah");
+        }
+
 
 
     }
