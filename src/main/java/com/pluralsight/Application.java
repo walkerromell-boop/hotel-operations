@@ -6,5 +6,9 @@ public class Application {
         Reservation reservation2 = new Reservation("double", 5, false);
         System.out.println(reservation1.getReservationTotal());
         System.out.println(reservation2.getReservationTotal());
+
+        Employee employee1=new Employee();
+
+
     }
 }
