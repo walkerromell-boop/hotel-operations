@@ -8,6 +8,9 @@ public class Employee {
     private double hoursWorked;
     private final double REGULAR_HOURS = 40;
     private final double OVERTIME_PAY_RATE = 1.15;
+    private double startTime;
+
+
 
 //    public double getTotalPay() {
 //        double totalPay = this.payRate * this.hoursWorked;
@@ -38,6 +41,16 @@ public class Employee {
         } else {
             return 0;
         }
+    }
+
+    public void punchIn(double time) {
+        startTime = time;
+        System.out.println(employeeName + " punch in: " + time);
+    }
+
+    public void punchOut(double time) {
+        double timeThisShift = time - startTime;
+        hoursWorked += timeThisShift;
     }
 
 }
