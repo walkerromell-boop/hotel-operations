@@ -8,7 +8,7 @@ public class Room {
     private boolean isAvailable;
     private boolean checkIn;
     private boolean checkout;
-    private boolean cleanRoom;
+
 
 
     public int getNumberOfBeds() {
